@@ -1,1 +1,2 @@
-
+The manifest.json describes the extension's configurations and capabilities. 
+The popup.js file describes what the popup of the extension will look like when you click on it. 
