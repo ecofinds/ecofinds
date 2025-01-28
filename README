@@ -3,3 +3,5 @@ The "logs" folder will have my daily logs.
 The "code" folder will have all my code. 
 The manifest.json describes the extension's configurations and capabilities. 
 The popup.js file describes what the popup of the extension will look like when you click on it. 
+
+The "images" folder has my logos and pictures. 
