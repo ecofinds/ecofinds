@@ -20,7 +20,7 @@ async function fetchAlternatives(product, price) {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
-                "Authorization": `Bearer k-proj-WdAR4WJkTGaHxlUI6Qglc8QlW4OS6N274LVmjokc7IWpcoQhvS6EsB1L8WkzSfnAm9K0XP4-cLT3BlbkFJU8_9KR3TfLc3qHBVyosLs55UCuW22-ZV4-WKC3QA8kL8H0q0lRCt0my0XHg8E7rLatY1vvmgAA`
+                "Authorization": `Bearer ${process.env.KEY}`
             },
             body: JSON.stringify({
                 model: "gpt-4",
