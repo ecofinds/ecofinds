@@ -1,0 +1,105 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f2f9f1;
+    color: #3a6351;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 400px;
+    background: white;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #3a6351;
+}
+
+.subtitle {
+    font-size: 14px;
+    color: #6d9773;
+    margin-bottom: 20px;
+}
+
+/* Search Bar */
+.search-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+#search-bar {
+    flex: 1;
+    padding: 10px;
+    border: 2px solid #a1c9a2;
+    border-radius: 20px;
+    font-size: 14px;
+    outline: none;
+    transition: 0.3s;
+}
+
+#search-bar:focus {
+    border-color: #6d9773;
+}
+
+#search-btn {
+    padding: 10px 15px;
+    background-color: #6d9773;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#search-btn:hover {
+    background-color: #3a6351;
+}
+
+/* Rating Section */
+.rating-container {
+    margin-top: 20px;
+}
+
+.rating-title {
+    font-size: 16px;
+    color: #3a6351;
+    margin-bottom: 10px;
+}
+
+.rating-bar-container {
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.rating-bar {
+    height: 10px;
+    width: 100%;
+    background-color: #d4e6d3;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.rating-fill {
+    height: 100%;
+    width: 70%; /* Change dynamically with JavaScript */
+    background-color: #6d9773;
+    transition: width 0.5s ease-in-out;
+}
+
+/* Different Colors for Each Rating */
+.sustainability-fill {
+    background-color: #8fc1a9;
+}
+
+.minority-fill {
+    background-color: #f4a261;
+}
