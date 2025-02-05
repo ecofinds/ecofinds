@@ -10,7 +10,7 @@
   },
   "action": {
     "default_popup": "index.html",
-    "default_icon": "tshirt.png"
+    "default_icon": "images/tshirt.png"
   },
   "content_scripts": [
     {
