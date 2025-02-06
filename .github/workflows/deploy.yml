@@ -1,2 +1,18 @@
-- name: Inject API Key #trigger
-  run: echo "export const API_KEY = '${{ secrets.KEY }}';" > src/config.js
+name: Deploy API Key
+
+on:
+  push:
+    branches:
+      - main  # Change this if your default branch is different
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Inject API Key
+        run: echo "export const API_KEY = '${{ secrets.KEY }}';" > src/config.js
+
