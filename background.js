@@ -1,4 +1,4 @@
-import { API_KEY } from "./config.js";
+import { API_KEY } from "./src/config.js";
 
 chrome.runtime.onMessage.addListener(async (message, sender, sendResponse) => {
     if (message.action === "extractData") {
