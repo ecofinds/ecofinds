@@ -17,5 +17,5 @@ jobs:
         run: echo "export const API_KEY = '${{ secrets.KEY }}';" > src/config.js
 
       - name: Debug: List Files
-        run: ls -la src/
+        run: ls -la src/ #fix
 
