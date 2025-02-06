@@ -1,3 +1,5 @@
+import { API_KEY } from "./config.js";
+
 chrome.runtime.onMessage.addListener(async (message, sender, sendResponse) => {
     if (message.action === "extractData") {
         let { productName, price } = message.data;
@@ -20,7 +22,7 @@ async function fetchAlternatives(product, price) {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
-                "Authorization": `Bearer ${process.env.KEY}`
+                "Authorization": `Bearer ${API_KEY}`
             },
             body: JSON.stringify({
                 model: "gpt-4",
