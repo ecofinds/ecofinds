@@ -16,6 +16,5 @@ jobs:
       - name: Inject API Key
         run: echo "export const API_KEY = '${{ secrets.KEY }}';" > src/config.js
 
-      - name: Debug List Files
-        run: ls -la src/ #fix
-
+      - name: Show config.js contents
+        run: cat src/config.js
