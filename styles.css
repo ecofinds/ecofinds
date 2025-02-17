@@ -1,105 +1,75 @@
-/* General Styles */
 body {
-    font-family: 'Marker Felt', sans-serif;
-    background-color: #f2f9f1;
-    color: #3a6351;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #62886c, #266a27); /* Softer natural green gradient */
+    color: #214116; /* Dark green text for contrast */
     text-align: center;
     margin: 0;
     padding: 20px;
+    width: 320px;
+    min-height: 250px;
 }
 
 .container {
-    max-width: 400px;
     background: white;
-    border-radius: 15px;
+    border-radius: 12px;
     padding: 20px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.logo {
+    width: 100px;
+    margin-bottom: 10px;
+    animation: popIn 0.6s ease-out;
 }
 
 .title {
-    font-size: 24px;
+    font-size: 22px;
     font-weight: bold;
-    color: #3a6351;
+    color: #2d591e;
+    margin: 10px 0;
 }
 
 .subtitle {
     font-size: 14px;
-    color: #6d9773;
-    margin-bottom: 20px;
-}
-
-/* Search Bar */
-.search-container {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 20px;
-}
-
-#search-bar {
-    flex: 1;
-    padding: 10px;
-    border: 2px solid #a1c9a2;
-    border-radius: 20px;
-    font-size: 14px;
-    outline: none;
-    transition: 0.3s;
-}
-
-#search-bar:focus {
-    border-color: #6d9773;
-}
-
-#search-btn {
-    padding: 10px 15px;
-    background-color: #6d9773;
-    color: white;
-    border: none;
-    border-radius: 20px;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-#search-btn:hover {
-    background-color: #3a6351;
-}
-
-/* Rating Section */
-.rating-container {
-    margin-top: 20px;
-}
-
-.rating-title {
-    font-size: 16px;
     color: #3a6351;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
-.rating-bar-container {
-    margin-bottom: 10px;
+#results {
+    font-size: 14px;
     text-align: left;
+    background: #f2f9f1;
+    color: #214116;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: inset 0px 2px 5px rgba(0, 0, 0, 0.1);
+    min-height: 60px;
+    overflow-y: auto;
 }
 
-.rating-bar {
-    height: 10px;
-    width: 100%;
-    background-color: #d4e6d3;
-    border-radius: 10px;
-    overflow: hidden;
-    position: relative;
+.button {
+    background-color: #2d591e;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease;
 }
 
-.rating-fill {
-    height: 100%;
-    width: 70%; /* Change dynamically with JavaScript */
-    background-color: #6d9773;
-    transition: width 0.5s ease-in-out;
+.button:hover {
+    background-color: #214116;
 }
 
-/* Different Colors for Each Rating */
-.sustainability-fill {
-    background-color: #8fc1a9;
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
 }
 
-.minority-fill {
-    background-color: #f4a261;
+/*@keyframes popIn {
+    from { transform: scale(0.8); opacity: 0; }
+    to { transform: scale(1); opacity: 1); }
 }
+    */
+
