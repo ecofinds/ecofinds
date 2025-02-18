@@ -1,7 +1,7 @@
 body {
     font-family: 'Arial', sans-serif;
-    background: linear-gradient(135deg, #C8D6E5, #8AE9B3); /* Softer natural green gradient */
-    color: #214116; /* Dark green text for contrast */
+    background: linear-gradient(135deg, #C8D6E5, #8AE9B3); 
+    color: #214116; 
     text-align: center;
     margin: 0;
     padding: 20px;
@@ -66,10 +66,4 @@ body {
     from { opacity: 0; transform: translateY(-10px); }
     to { opacity: 1; transform: translateY(0); }
 }
-
-/*@keyframes popIn {
-    from { transform: scale(0.8); opacity: 0; }
-    to { transform: scale(1); opacity: 1); }
-}
-    */
 
