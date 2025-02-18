@@ -5,5 +5,4 @@ function getProductInfo() {
     chrome.runtime.sendMessage({ action: "extractData", data: { productName, price } });
 }
 
-// run automatically when the page loads yayyy
 getProductInfo();
